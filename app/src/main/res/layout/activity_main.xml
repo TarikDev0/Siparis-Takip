@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ZerbetSari"
+    tools:context="com.tarik.zerbetsiparistakip.MainActivity">
+
+    <EditText
+        android:id="@+id/grsMail"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:ems="10"
+        android:hint="E-Mail adresinizi giriniz"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/grsBtnGiris"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/ZerbetSiyah"
+        android:text="Giriş Yap"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <EditText
+        android:id="@+id/grsParola"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/grsKydlbtn"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/ZerbetSiyah"
+        android:text="Kaydol"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <CheckBox
+        android:id="@+id/grsCheck"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:outlineAmbientShadowColor="@color/ZerbetSiyah"
+        android:outlineSpotShadowColor="@color/ZerbetSiyah"
+        android:shadowColor="@color/ZerbetSiyah"
+        android:text="Beni Hatırla"
+        android:textColor="@color/ZerbetSiyah"
+        android:textColorHighlight="@color/ZerbetSiyah"
+        android:textColorHint="@color/ZerbetSiyah"
+        android:textColorLink="@color/ZerbetSiyah"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/grsUnutunmu"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:text="Şifrenizi mi unuttunuz?"
+        android:textColor="@color/ZerbetSiyah"
+        android:textColorHighlight="@color/ZerbetSiyah"
+        android:textColorHint="@color/ZerbetSiyah"
+        android:textColorLink="@color/ZerbetSiyah"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/zerbetlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

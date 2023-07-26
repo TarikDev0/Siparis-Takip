@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ZerbetSari"
+    tools:context="com.tarik.zerbetsiparistakip.ver"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/toplamTutar"
+        android:layout_width="135dp"
+        android:layout_height="38dp"
+        android:background="@drawable/button"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/ZerbetSari"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnVer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <Button
+        android:id="@+id/btnAcmaCikar"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/acmaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="@+id/acmaEditText"
+        app:layout_constraintTop_toTopOf="@+id/acmaEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/acmaText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="Açma"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/acmaEditText"
+        app:layout_constraintEnd_toEndOf="@+id/acmaEditText"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/acmaRsm"
+        app:layout_constraintTop_toTopOf="@+id/acmaEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/acmaTutarText"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="Tutar:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/acmaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/acmaEditText"
+        app:layout_constraintTop_toTopOf="@+id/acmaEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/acmaEditText"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Kaç tepsi?"
+        android:inputType="textPersonName"
+        android:outlineAmbientShadowColor="@color/ZerbetSiyah"
+        android:outlineSpotShadowColor="@color/ZerbetSiyah"
+        android:shadowColor="@color/ZerbetSiyah"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/ZerbetSiyah"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/acmaRsm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/acmaRsm"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:id="@+id/btnAcmaEkle"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/acmaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/acmaEditText"
+        app:layout_constraintTop_toTopOf="@+id/acmaEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/acmaTutar"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:paddingEnd="7dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/acmaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/acmaText"
+        app:layout_constraintTop_toTopOf="@+id/acmaEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/acmaFiyat"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="80"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/acmaEditText"
+        app:layout_constraintEnd_toEndOf="@+id/acmaEditText"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/acmaRsm"
+        app:layout_constraintTop_toTopOf="@+id/acmaEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pogacaTutar"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:paddingEnd="7dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pogacaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/pogacaEditText"
+        app:layout_constraintTop_toTopOf="@+id/pogacaEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnPogacaCikar"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/pogacaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/pogacaEditText"
+        app:layout_constraintTop_toTopOf="@+id/pogacaEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pogacaFiyat"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="80"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pogacaEditText"
+        app:layout_constraintEnd_toEndOf="@+id/pogacaEditText"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/pogacaRsm"
+        app:layout_constraintTop_toTopOf="@+id/pogacaEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/pogacaEditText"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Kaç tepsi?"
+        android:inputType="textPersonName"
+        android:outlineAmbientShadowColor="@color/ZerbetSiyah"
+        android:outlineSpotShadowColor="@color/ZerbetSiyah"
+        android:shadowColor="@color/ZerbetSiyah"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/ZerbetSiyah"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pogacaRsm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pogacaRsm"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:id="@+id/btnPogacaEkle"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/pogacaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/pogacaEditText"
+        app:layout_constraintTop_toTopOf="@+id/pogacaEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pogacaTutarText"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="Tutar:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pogacaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/pogacaEditText"
+        app:layout_constraintTop_toTopOf="@+id/pogacaEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pogacaText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="Poğaça"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pogacaEditText"
+        app:layout_constraintEnd_toEndOf="@+id/pogacaEditText"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/pogacaRsm"
+        app:layout_constraintTop_toTopOf="@+id/pogacaEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/kolTutar"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:paddingEnd="7dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kolEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/kolEditText"
+        app:layout_constraintTop_toTopOf="@+id/kolEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/kolTutarText"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="Tutar:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kolEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/kolEditText"
+        app:layout_constraintTop_toTopOf="@+id/kolEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnKolCikar"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/kolEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toEndOf="@+id/kolText"
+        app:layout_constraintTop_toTopOf="@+id/kolEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/kolText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="Kol Böreği"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kolEditText"
+        app:layout_constraintEnd_toEndOf="@+id/kolEditText"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@+id/kolBoregiRsm"
+        app:layout_constraintTop_toTopOf="@+id/kolEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="132dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/zerbetlogo" />
+
+    <Button
+        android:id="@+id/btnSadeCikar"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sadeEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/sadeEditText"
+        app:layout_constraintTop_toTopOf="@+id/sadeEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sadeBorekRsm"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pogaca"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kolBoregiRsm"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="225dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pogaca"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pogacaRsm"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="300dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pogaca"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/acmaRsm"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="375dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pogaca"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/simitRsm"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="450dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pogaca"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dereOtluRsm"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="525dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pogaca"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/icliSimitRsm"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="600dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pogaca"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnVer"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:text="Sipariş Ver"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/sadeEditText"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Kaç tepsi?"
+        android:inputType="textPersonName"
+        android:outlineAmbientShadowColor="@color/ZerbetSiyah"
+        android:outlineSpotShadowColor="@color/ZerbetSiyah"
+        android:paddingBottom="18dp"
+        android:shadowColor="@color/ZerbetSiyah"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/ZerbetSiyah"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sadeBorekRsm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sadeBorekRsm"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <EditText
+        android:id="@+id/kolEditText"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Kaç tepsi?"
+        android:inputType="textPersonName"
+        android:outlineAmbientShadowColor="@color/ZerbetSiyah"
+        android:outlineSpotShadowColor="@color/ZerbetSiyah"
+        android:shadowColor="@color/ZerbetSiyah"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/ZerbetSiyah"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kolBoregiRsm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kolBoregiRsm"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:id="@+id/btnSadeEkle"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sadeEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/sadeEditText"
+        app:layout_constraintTop_toTopOf="@+id/sadeEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnKolEkle"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/kolEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/kolEditText"
+        app:layout_constraintTop_toTopOf="@+id/kolEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sadeText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="Sade Börek"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sadeEditText"
+        app:layout_constraintEnd_toEndOf="@+id/sadeEditText"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@+id/sadeBorekRsm"
+        app:layout_constraintTop_toTopOf="@+id/sadeEditText"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/sadeTutar"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:paddingEnd="7dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sadeEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sadeEditText"
+        app:layout_constraintTop_toTopOf="@+id/sadeEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/sadeTutarText"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="Tutar:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sadeEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/sadeEditText"
+        app:layout_constraintTop_toTopOf="@+id/sadeEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sadeFiyat"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sadeEditText"
+        app:layout_constraintEnd_toEndOf="@+id/sadeEditText"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@+id/sadeBorekRsm"
+        app:layout_constraintTop_toTopOf="@+id/sadeEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/kolFiyat"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="168"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kolEditText"
+        app:layout_constraintEnd_toEndOf="@+id/kolEditText"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@+id/kolBoregiRsm"
+        app:layout_constraintTop_toTopOf="@+id/kolEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/simitText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="Simit"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/simitEditText"
+        app:layout_constraintEnd_toEndOf="@+id/simitEditText"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/simitRsm"
+        app:layout_constraintTop_toTopOf="@+id/simitEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/simitFiyat"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/simitEditText"
+        app:layout_constraintEnd_toEndOf="@+id/simitEditText"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/simitRsm"
+        app:layout_constraintTop_toTopOf="@+id/simitEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/simitEditText"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Kaç tepsi?"
+        android:inputType="textPersonName"
+        android:outlineAmbientShadowColor="@color/ZerbetSiyah"
+        android:outlineSpotShadowColor="@color/ZerbetSiyah"
+        android:paddingBottom="18dp"
+        android:shadowColor="@color/ZerbetSiyah"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/ZerbetSiyah"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/simitRsm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/simitRsm"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <Button
+        android:id="@+id/btnSimitEkle"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/simitEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/simitEditText"
+        app:layout_constraintTop_toTopOf="@+id/simitEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnSimitCikar"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/simitEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/simitEditText"
+        app:layout_constraintTop_toTopOf="@+id/simitEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/simitTutarText"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="Tutar:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/simitEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/simitEditText"
+        app:layout_constraintTop_toTopOf="@+id/simitEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/simitTutar"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:paddingEnd="7dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/simitEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/simitEditText"
+        app:layout_constraintTop_toTopOf="@+id/simitEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/otluText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="Dereotlu"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/otluEditText"
+        app:layout_constraintEnd_toEndOf="@+id/otluEditText"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/dereOtluRsm"
+        app:layout_constraintTop_toTopOf="@+id/otluEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/otluFiyat"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/otluEditText"
+        app:layout_constraintEnd_toEndOf="@+id/otluEditText"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/dereOtluRsm"
+        app:layout_constraintTop_toTopOf="@+id/otluEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/otluEditText"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Kaç tepsi?"
+        android:inputType="textPersonName"
+        android:outlineAmbientShadowColor="@color/ZerbetSiyah"
+        android:outlineSpotShadowColor="@color/ZerbetSiyah"
+        android:paddingBottom="18dp"
+        android:shadowColor="@color/ZerbetSiyah"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/ZerbetSiyah"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dereOtluRsm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dereOtluRsm"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <Button
+        android:id="@+id/btnOtluEkle"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/otluEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/otluEditText"
+        app:layout_constraintTop_toTopOf="@+id/otluEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnOtluCikar"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/otluEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/otluEditText"
+        app:layout_constraintTop_toTopOf="@+id/otluEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/otluTutarText"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="Tutar:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/otluEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/otluEditText"
+        app:layout_constraintTop_toTopOf="@+id/otluEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/otluTutar"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:paddingEnd="7dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/otluEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/otluEditText"
+        app:layout_constraintTop_toTopOf="@+id/otluEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/icliText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="İçli Simit"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/icliEditText"
+        app:layout_constraintEnd_toEndOf="@+id/icliEditText"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@+id/icliSimitRsm"
+        app:layout_constraintTop_toTopOf="@+id/icliEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/icliFiyat"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/icliEditText"
+        app:layout_constraintEnd_toEndOf="@+id/icliEditText"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@+id/icliSimitRsm"
+        app:layout_constraintTop_toTopOf="@+id/icliEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/icliEditText"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Kaç tepsi?"
+        android:inputType="textPersonName"
+        android:outlineAmbientShadowColor="@color/ZerbetSiyah"
+        android:outlineSpotShadowColor="@color/ZerbetSiyah"
+        android:paddingBottom="18dp"
+        android:shadowColor="@color/ZerbetSiyah"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/ZerbetSiyah"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/icliSimitRsm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/icliSimitRsm"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <Button
+        android:id="@+id/btnIcliEkle"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/icliEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/icliEditText"
+        app:layout_constraintTop_toTopOf="@+id/icliEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnIcliCikar"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/button"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/icliEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/icliEditText"
+        app:layout_constraintTop_toTopOf="@+id/icliEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/icliTutarText"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="Tutar:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/icliEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/icliEditText"
+        app:layout_constraintTop_toTopOf="@+id/icliEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/icliTutar"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:paddingEnd="7dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/icliEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/icliEditText"
+        app:layout_constraintTop_toTopOf="@+id/icliEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

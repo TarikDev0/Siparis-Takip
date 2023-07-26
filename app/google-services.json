@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "626010611504",
+    "project_id": "zerbetsiparistakip",
+    "storage_bucket": "zerbetsiparistakip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626010611504:android:e2cb1013440e747e4432f5",
+        "android_client_info": {
+          "package_name": "com.tarik.zerbetsiparistakip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626010611504-mgd77ciskqhfpg8d3qhj3mc4hkscjfqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tarik.zerbetsiparistakip",
+            "certificate_hash": "8740c6d203f5a8b476fb9421e88297106dad5974"
+          }
+        },
+        {
+          "client_id": "626010611504-fpa038c1qal4fe80u48npn5m9rfs9su5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVDaWmHXqwugc2_DK5_eg13GsXLprl0Xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626010611504-fpa038c1qal4fe80u48npn5m9rfs9su5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
